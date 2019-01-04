@@ -1,0 +1,6 @@
+Algorithms for solving the Rubik's cube:
+  http://www.diva-portal.org/smash/get/diva2:816583/FULLTEXT01.pdf
+
+IDA* or Thistletwaite’s Algorithm
+
+Decide How we will represent Cube and its movement!
