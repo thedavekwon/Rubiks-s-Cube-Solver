@@ -2,11 +2,15 @@
 // Created by dodo on 1/5/19.
 //
 
-#include "Cube.h"
+#include "Cube.hpp"
 
 using namespace std;
 
 int main() {
     Cube c;
-    vector<vector<int>> face(3, vector<int>(3, 0));
+    cout << c << endl;
+    c.turnBack();
+    cout << c << endl;
+    c.turnCounterBack();
+    cout << c << endl;
 }
