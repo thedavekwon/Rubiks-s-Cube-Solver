@@ -71,6 +71,7 @@ public:
     }
 
     void turnLeft() {
+        //turn left face 90 deg cw
         //non face turns
         vector<int> tmp = {Front[0][0], Front[1][0], Front[2][0]};
         Front[0][0] = Up[0][0];
@@ -88,10 +89,11 @@ public:
     }
 
     void turnCounterLeft() {
+        //turn left face 90 deg ccw
         //non face turns
         vector<int> tmp = {Front[0][0], Front[1][0], Front[2][0]};
         Front[0][0] = Down[0][0];
-        Front[1][0] = Down[2][0];
+        Front[1][0] = Down[1][0];
         Front[2][0] = Down[2][0];
         Down[0][0] = Back[2][2];
         Down[1][0] = Back[1][2];
@@ -105,11 +107,39 @@ public:
     }
 
     void turnRight() {
-
+        //turn right face 90 deg cw
+        //non face turns
+        vector<int> tmp = {Front[0][2], Front[1][2], Front[2][2]};
+        Front[0][2] = Down[0][2];
+        Front[1][2] = Down[1][2];
+        Front[2][2] = Down[2][2];
+        Down[0][2] = Back[2][0];
+        Down[1][2] = Back[1][0];
+        Down[2][2] = Back[0][0];
+        Back[0][0] = Up[2][2];
+        Back[1][0] = Up[1][2];
+        Back[2][0] = Up[0][2];
+        Up[0][2] = tmp[0];
+        Up[1][2] = tmp[1];
+        Up[2][2] = tmp[2];
     }
 
     void turnCounterRight() {
-
+      //turn right face 90 deg ccw
+      //non face turns
+      vector<int> tmp = {Front[0][2], Front[1][2], Front[2][2]};
+      Front[0][2] = Up[0][2];
+      Front[1][2] = Up[1][2];
+      Front[2][2] = Up[2][2];
+      Up[0][2] = Back[2][0];
+      Up[1][2] = Back[1][0];
+      Up[2][2] = Back[0][0];
+      Back[0][0] = Down[2][2];
+      Back[1][0] = Down[1][2];
+      Back[2][0] = Down[0][2];
+      Down[0][2] = tmp[0];
+      Down[1][2] = tmp[1];
+      Down[2][2] = tmp[2];
     }
 
 
