@@ -3,4 +3,4 @@ project(Rubiks-s-Cube-Solver)
 
 set(CMAKE_CXX_STANDARD 11)
 
-add_executable(Rubiks-s-Cube-Solver ./src/cube.cpp)
+add_executable(Rubiks-s-Cube-Solver src/main.cpp)

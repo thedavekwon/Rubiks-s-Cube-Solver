@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/dodo/CLionProjects/Rubiks-s-Cube-Solver/src/Cube.hpp
+functional
+-
+iostream
+-
+random
+-
+vector
+-
+
+/home/dodo/CLionProjects/Rubiks-s-Cube-Solver/src/Solver.hpp
+queue
+-
+Cube.hpp
+/home/dodo/CLionProjects/Rubiks-s-Cube-Solver/src/Cube.hpp
+
+/home/dodo/CLionProjects/Rubiks-s-Cube-Solver/src/main.cpp
+Solver.hpp
+/home/dodo/CLionProjects/Rubiks-s-Cube-Solver/src/Solver.hpp
+

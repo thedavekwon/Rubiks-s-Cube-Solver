@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/Rubiks-s-Cube-Solver.dir/src/main.cpp.o  -o Rubiks-s-Cube-Solver 
